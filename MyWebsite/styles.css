@@ -1,0 +1,199 @@
+body {margin:0;
+/* background-image: url(./images/burger.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style the navigation bar */
+.navbar{
+  width: 100%;
+  background-color:black;
+  overflow: auto;
+  padding-left: 900px;
+  
+}
+
+.icon{
+  display: none;
+}
+
+/* Navbar links */
+.navbar li{
+  display: inline-block;
+  right: 0; 
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 10;
+  list-style-type: none;
+
+}
+
+/* Navbar links on mouse-over */
+.navbar li:hover {
+  background-color: #777;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: red;
+  color: #ffffff;
+}
+
+.navbar a{
+  z-index: 10;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 600px) {
+  .navbar li {
+    display: none;
+  }
+  .icon{
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  padding: 20px;
+  color: red;
+  font-size: 35px;
+  display: block;
+  }
+  .navbar li{
+  right: 0; 
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 10;
+  list-style-type: none;
+  }
+}
+
+#feast{
+  /* position: absolute; */
+  text-align: center; 
+  margin-top: 250px; 
+  /* margin-bottom: 250px; */
+  /* margin-left: 218px; */
+  margin-left: 8%;
+  font-weight: bolder;
+  font-family: 'Cookie',cursive;
+  color:red
+}
+
+/* Hide the images by default */
+
+  /* display: none; */
+  /* position: relative; */
+
+/* #slideshow > div{
+  position: absolute;
+  top:10px;
+  left:10px;
+  right: 10px;
+  bottom:10px;
+} */
+
+/* .flexslider .slides img {
+  width: 100%;
+  display: block;
+} */
+
+.ashade-kenburns-slider {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.ashade-kenburns-slider > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: no-repeat center;
+	background-size: cover;
+	opacity: 0;
+}
+.ashade-kenburns-slider > div.is-active {
+	opacity: 1;
+}
+
+*,*::after, *::before{
+  box-sizing: border-box;
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80% ;
+  color: black;
+}
+.modal.active{
+  transform:translate(-50%,-50%)scale(1);
+}
+.modal-header{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-header .close-button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  width: 20px;
+  padding:0px;
+  height: 20px;
+
+}
+.modal-body{
+  padding: 10px 15px;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background-color:rgba(0,0,0, .5);
+  pointer-events: none;
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+#send{
+  background-color:red;
+  border-color: black;
+  
+  /* border-color: black; */
+}
+
+.agba:hover{
+  background-color: #ffffff;
+}
+

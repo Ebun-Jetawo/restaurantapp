@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="./styles1.css">
+    <script src="https://kit.fontawesome.com/0b45478c08.js" crossorigin="anonymous"></script> 
+</head>
+<body id="contact">
+    <div class="navbar">
+        <i class="fa fa-bars icon" aria-hidden="true" id="menu"></i>
+        <a class="active" href="#"><i class="fas fa-phone-alt"> Contact </i></a>
+        <a data-modal-target="#modal" id="clicked" class="navbtn" ><i class="fas fa-cocktail"></i> Reservation</a>
+        <a href="about.html"><i class="fas fa-address-card"> About Us</i></a>
+        <a href="menu.html"><i class="fas fa-utensils"> Menu</i></a>
+        <a href="index.html"><i class="far fa-smile-beam"> Welcome </i></a>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Make a reservation</div>
+            <button data-close-button id="closed" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+        <form action="#">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" placeholder="Enter your name" name="fname">
+                <br>
+                <br>
+                <label for="number">Phone Number:</label>
+                <input type="text" id="number" placeholder="Enter your phone number" name="number">
+                <br>
+                <br>
+                <label for="specify">Reservation Specification:</label>
+                <select name="reserve" id="reserve">
+                    <option value="Apple">Apple</option>
+                    <option value="Apple Drink">Apple Drink</option>
+                    <option value="Avocado">Avocado</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Berries">Berries</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Chicken wings">Chicken wings</option>
+                    <option value="Chocolate Chip Cookies">Chocolate Chip Cookies</option>
+                    <option value="Chocs">Chocs</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Croissants">Croissants</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Doughnuts">Doughnuts</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Fries & Tomato Sauce">Fries & Tomato Sauce</option>
+                    <option value="Fried Pasta & White Rice">Fried Pasta & White Rice</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Just Vegetables">Just Vegetables</option>
+                    <option value="Latte">Latte</option>
+                    <option value="Marble Cake">Marble Cake</option>
+                    <option value="Mocktails">Mocktails</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Pancakes">Pancakes</option>
+                    <option value="Peppery Steak">Peppery Steak</option>
+                    <option value="Rice & Vegetable Sauce">Rice & Vegetable Sauce</option>
+                    <option value="Sandwiches">Sandwiches</option>
+                    <option value="Spaghetti & Beef">Spaghetti & Beef</option>
+                    <option value="Spicy Salmon">Spicy Salmon</option>
+                    <option value="Tangerine">Tangerine</option>
+                    <option value="Vegetable & Egg Plant">Vegetable & Egg Plant</option>
+                    <option value="Watermelon">Watermelon</option>
+                </select>
+                <br>
+                <br>
+                <label for="multiple">Multiple Reservations:</label>
+                <input type="text" placeholder="Use a comma for separation  ' , ' " id="multiple">
+                <br>
+                <br>
+                <label for="people">Expecting Guest(s):</label>
+                <input type="text" placeholder="Reservation Count" name="people" id="people">
+                <br>
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
+                <br>
+                <br>
+                <button id="send">Send</button>
+                </form>
+
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+
+    <br>
+    <br>
+    <h2 id="one_of_form">it is always a joy to hear from you</h2>
+
+    <br>
+    <br>
+    <form class="form-inline" action="#" method="post">
+        <label for="fname"></label>
+        <input type="text" id="=fname" placeholder="Firstname" name="fname">
+        <label for="lname"></label>
+        <input type="text" id="lname" placeholder="Lastname" name="lname">
+        <label for="continent"></label>
+        <select name="continent" id="continent" value="--select a continent--">
+            <option value="africa">Africa</option>
+            <option value="antartica">Antartica</option>
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+            <option value="europe">Europe</option>
+            <option value="northamerica">North America</option>
+            <option value="southamerica">South America</option>
+            </select>
+            <br>
+            <br>
+            <br>
+        <label for="writeup"></label>
+        <textarea name="writeup" id="writeup" cols="60" rows="14" placeholder="Go ahead,we are listening..."></textarea>
+        <br>
+        <br>
+        <button id="button">Send to Outer Space</button>
+        <br>
+        <h3 id="follow">Follow Us:</h3>
+        <span class="social-icon">
+            <a href="https://instagram.com/ebunn__?igshid=1ph4vfdm8fr1d" target="_blank"><i class="fab fa-instagram fa-3x" id="insta"></i></a>
+            <a href="https://twitter.com/EbunJetawo?s=03" target="_blank"><i class="fab fa-twitter fa-3x" id="twitter"></i></a>
+            <a href="https://www.facebook.com/ebunoluwa.jetawo/" target="_blank"><i class="fab fa-facebook fa-3x" id="face"></i></a>
+            <a href="https://www.linkedin.com/in/ebunoluwa-jetawo-5b1920b3/" target="_blank"><i class="fab fa-linkedin-in" id="linked"></i></a>
+        </span>
+</form>
+    
+<script src="script.js"></script>
+</body>
+</html>

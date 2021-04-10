@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="./styles1.css">
+    <script src="https://kit.fontawesome.com/0b45478c08.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="about">
+    <div class="navbar">
+        <i class="fa fa-bars icon" aria-hidden="true" id="menu"></i>
+        <a href="contact.html"><i class="fas fa-phone-alt"> Contact</i></a>
+        <a data-modal-target="#modal" id="clicked" class="navbtn" ><i class="fas fa-cocktail"></i> Reservation</a>
+        <a class="active" href="#" ><i class="fas fa-address-card"> About Us </i></a>
+        <a href="menu.html"><i class="fas fa-utensils"> Menu</i></a>
+        <a href="index.html"><i class="far fa-smile-beam"> Welcome</i></a>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Make a reservation</div>
+            <button data-close-button id="closed" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+        <form action="#">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" placeholder="Enter your name" name="fname">
+                <br>
+                <br>
+                <label for="number">Phone Number:</label>
+                <input type="text" id="number" placeholder="Enter your phone number" name="number">
+                <br>
+                <br>
+                <label for="specify">Reservation Specification:</label>
+                <select name="reserve" id="reserve">
+                    <option value="Apple">Apple</option>
+                    <option value="Apple Drink">Apple Drink</option>
+                    <option value="Avocado">Avocado</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Berries">Berries</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Chicken wings">Chicken wings</option>
+                    <option value="Chocolate Chip Cookies">Chocolate Chip Cookies</option>
+                    <option value="Chocs">Chocs</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Croissants">Croissants</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Doughnuts">Doughnuts</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Fries & Tomato Sauce">Fries & Tomato Sauce</option>
+                    <option value="Fried Pasta & White Rice">Fried Pasta & White Rice</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Just Vegetables">Just Vegetables</option>
+                    <option value="Latte">Latte</option>
+                    <option value="Marble Cake">Marble Cake</option>
+                    <option value="Mocktails">Mocktails</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Pancakes">Pancakes</option>
+                    <option value="Peppery Steak">Peppery Steak</option>
+                    <option value="Rice & Vegetable Sauce">Rice & Vegetable Sauce</option>
+                    <option value="Sandwiches">Sandwiches</option>
+                    <option value="Spaghetti & Beef">Spaghetti & Beef</option>
+                    <option value="Spicy Salmon">Spicy Salmon</option>
+                    <option value="Tangerine">Tangerine</option>
+                    <option value="Vegetable & Egg Plant">Vegetable & Egg Plant</option>
+                    <option value="Watermelon">Watermelon</option>
+                </select>
+                <br>
+                <br>
+                <label for="multiple">Multiple Reservations:</label>
+                <input type="text" placeholder="Use a comma for separation  ' , ' " id="multiple">
+                <br>
+                <br>
+                <label for="people">Expecting Guest(s):</label>
+                <input type="text" placeholder="Reservation Count" name="people" id="people">
+                <br>
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
+                <br>
+                <br>
+                <button id="send">Send</button>
+        </form>
+
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    
+        <h1 id="textabout1">Ebunoluwa Jetawo</h1>
+            <p>A recent graduate of Mathematics Education from University of Lagos. A Data Analyst with skills in front end development,dedicating her work to God and thankful to Uche Obi for his support.</p>
+            <br>
+            <br>
+            <div id="container">
+                <img src="./images/webeb.jpg" alt="Ebun's picture" class="image" style="width: 100%">  
+            </div>
+    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
